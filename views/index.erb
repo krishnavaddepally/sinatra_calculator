@@ -1,7 +1,7 @@
 <h1>Calculator</h1>
 
-<% if locals[:result] %>
-  <h3>Last result: <%= locals[:result] %></h3>
+<% if @result %>
+  <h3>Last result: <%= @result %></h3>
 <% end %>
 
 <form action="/calculate" method="post">
