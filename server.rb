@@ -5,6 +5,8 @@ get '/' do
   erb :index
 end
 
+set :bind, '0.0.0.0'  # bind to all interfaces
+
 post '/calculate' do
   @result = nil
   first_number = params[:first_number].to_i
